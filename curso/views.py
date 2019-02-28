@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import UsuarioForm
+from .forms import UserForm
 from .forms import Usuario
 from django.http import HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
@@ -9,15 +9,17 @@ from django.contrib.auth import authenticate, login, logout
 def base(request):
     return render(request, "curso/base.html")
 
-def entrar(request):
-    return render(request, "curso/login.html")
+def logado(request):
+    return render(request, "curso/logado.html")
 
 def cadastro(request):
     if request.method=='POST':
-        form = UsuarioForm(request.POST or None)
+        form = UserForm(request.POST or None)
         if form.is_valid():
             form.save()
+            return HttpResponseRedirect("/")
+
     else:
-        form = UsuarioForm()
+        form = UserForm()
     context = {'form': form}
     return render(request, "curso/cadastro.html", context)
