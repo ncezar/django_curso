@@ -7,5 +7,9 @@ urlpatterns = [
     path('cadastro', views.cadastro, name='cadastro'),
     path('accounts/', include('django.contrib.auth.urls')), # new
     path('logado', views.logado, name='logado'),
+    path('curso', views.curso, name='curso'),
+    path('cronograma', views.cronograma, name='cronograma'),
+    path('perguntas', views.perguntas, name='perguntas'),
+
 
 ]

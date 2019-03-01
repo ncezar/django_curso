@@ -1,0 +1,54 @@
+{% load staticfiles %}
+{{ form.media.css }}
+{{ form.media.js }}
+<html>
+    <head>
+        <title>Treasy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{% static 'css/curso.css' %}">
+        <style>
+        .fakeimg {
+          height: 200px;
+          background: #aaa;
+        }
+        </style>
+    </head>
+    <body>
+
+        <div id="cabecalho" class="jumbotron text-center" style="margin-bottom:0">
+          <h1>O Curso </h1>
+
+        </div>
+        <div class="menu" >
+            <nav id="nav" class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+              <div class="collapse navbar-collapse justify-content-between align-items-center" id="collapsibleNavbar">
+            </nav>
+        </div>
+      <div class="col-md-6 offset-md-3" >
+        <p>Como o curso Organizando o Financeiro pode auxiliar a gestão da sua empresa:</p>
+
+        <ul>
+            <li>Mais de 4h horas de curso em vídeos de alta qualidade; </li>
+            <li>Materiais complementares sobre Gestão Financeira e Orçamentária em todas as aulas; </li>
+            <li>Fórum exclusivo para compartilhar aprendizados e desafios; </li>
+            <li>100   dias   de   acesso   gratuito   na   plataforma   de   Gestão   Orçamentária   do   Treasy   para
+            prática dos exercícios; </li>
+            <li>Certificado Treasy </li>
+            <li>2h   de   consultoria   remota   gratuita   com   nosso   time   de   especialistas   em   Gestão
+            Orçamentária; </li>
+            <li>Ensino   da   Metodologia   Treasy   de   Gestão   Orçamentária,   aprovada  por   centenas   de
+            empresas por todo o Brasil; </li>
+            <li>Curso   prático   e   focado   em   resultados   rápidos   para   que   você   possa   aplicar   a
+            metodologia na sua empresa. </li>
+
+        </ul>
+          <h2>Valor promocional de lançamento de R$ 349,00 por R$ 199,90</h2>
+
+      </div>
+      <a href="{% url 'logado' %}"><input style="position:absolute; right: 200px;" type =button value='Home'></a>
+
+</html>

@@ -31,13 +31,13 @@
           <div class="collapse navbar-collapse justify-content-between align-items-center" id="collapsibleNavbar">
             <ul class="navbar-nav mx-auto text-center">
               <li class="nav-item">
-                <a class="nav-link" href="#">O Curso</a>
+                <a class="nav-link" href="{% url 'curso' %}">O Curso</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Cronograma</a>
+                <a class="nav-link" href="{% url 'cronograma' %}">Cronograma</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Perguntas Frequentes</a>
+                <a class="nav-link" href="{% url 'perguntas' %}">Perguntas Frequentes</a>
               </li>
 
             </ul>
@@ -48,7 +48,7 @@
       <img style="width: 50%; height: 60%;position:absolute; right: 330px;"
       alt="Image description"
       src="{% static 'images/img2.png' %}"/>
-      
+
       <br>
 
 

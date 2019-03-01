@@ -1,0 +1,63 @@
+{% load staticfiles %}
+{{ form.media.css }}
+{{ form.media.js }}
+<html>
+    <head>
+        <title>Treasy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{% static 'css/curso.css' %}">
+        <style>
+        .fakeimg {
+          height: 200px;
+          background: #aaa;
+        }
+        </style>
+    </head>
+    <body>
+
+        <div id="cabecalho" class="jumbotron text-center" style="margin-bottom:0">
+          <h1>Cronograma</h1>
+
+        </div>
+        <div class="menu" >
+            <nav id="nav" class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+              <div class="collapse navbar-collapse justify-content-between align-items-center" id="collapsibleNavbar">
+            </nav>
+        </div>
+      <div class="col-md-6 offset-md-3" >
+
+        <ul>
+           <li>Aula 01 – O que significa organizar o Financeiro:
+             <ul>
+               <li> Conceitos   de   Tesouraria,   Financeiro,   Administração, Contabilidade e
+               Controladoria; </li>
+               <li> Conceitos de despesas e receitas;</li>
+               <li> Tomada de decisão orientada a dados.</li>
+             </ul>
+           </li>
+           <li>Aula 01 – Por onde começar:
+             <ul>
+               <li> Consolidação das informações;</li>
+               <li>Criando um plano de contas;</li>
+               <li> Estruturando o Centro de Custos.</li>
+             </ul>
+           </li>
+           <li>Aula 3 - Relatórios Gerenciais:
+             <ul>
+               <li> Projeção do fluxo de caixa;</li>
+               <li>Regime de competência x regime de caixa;</li>
+               <li> Demonstrativo de Resultados do Exercício (DRE);</li>
+             </ul>
+           </li>
+
+       </ul>
+
+
+      </div>
+      <a href="{% url 'logado' %}"><input style="position:absolute; right: 200px;" type =button value='Home'></a>
+
+</html>
